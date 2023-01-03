@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+@font-face { 
+  font-family: "Impact";
+  src: url("assets/font/impact.ttf"); 
+}
+
+a {
+  color: #fff;
+}
+
+a:hover {
+  color: #fff;
+}
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  background: linear-gradient(30deg, #0D0F1A 30%, #0D0F1A 100%);
+  color: #fff;
+}
+
+p {
+  font-size: 18px;
+}
+
+div {
+  font-size: 18px;
+}
+
+hr {
+  background-color: #fff;
+}
+
+.btn-primary, .btn-primary:active, .btn-primary:focus, .btn-primary:disabled {
+  background: transparent;
+  box-shadow: none;
+  color: #fff;
+  border: 2px solid white;
+}
+
+.btn-primary:hover {
+  color: #000;
+  background: #fff;
+  border: 2px solid white;
+}
+
+.btn-secondary, .btn-secondary:active, .btn-secondary:focus, .btn-secondary:disabled {
+  background: white;
+  border-color: black;
+  box-shadow: none;
+  color: black;
+  border: 2px solid black;
+}
+
+.btn-secondary:hover {
+  color: black;
+  border-color: #ffffff;
+  background: #ffffff;
+  border: 2px solid black;
+}
+
+.container {
+  background: transparent;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #fff;
+}
+
+.img-thumbnail {
+  background-color: transparent;
+}
+
+.modal-content {
+  color: black;
+}
+
+.span-link:hover {
+  color: #1c1b1b;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.span-link {
+  text-decoration: underline;
+}
+
+.Vue-Toastification__toast--info {
+  background-color: #405374;
+}
+
+.Vue-Toastification__toast--success {
+  background-color: #00C9D1;
+}
+
+.Vue-Toastification__toast--error {
+  background-color: #e26670;
+}
+
+@media only screen and (max-width: 767px) {
+  #sidebar-container {
+    margin-bottom: 15px;
+  }
+}
