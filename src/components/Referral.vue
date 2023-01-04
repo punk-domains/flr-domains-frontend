@@ -12,8 +12,8 @@
           <div class="col-md-6 offset-md-3">
             <input 
               class="form-control text-center clipboard"
-              :value="'https://songbird.domains/?ref=' + this.getNameOrAddress"
-              @click="copyToClipboard('https://songbird.domains/?ref=' + this.getNameOrAddress)"
+              :value="'https://flr.domains/?ref=' + this.getNameOrAddress"
+              @click="copyToClipboard('https://flr.domains/?ref=' + this.getNameOrAddress)"
               readonly
             >
           </div>

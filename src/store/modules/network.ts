@@ -10,14 +10,14 @@ export default {
     networkCurrency: "ETH",
     networkName: "Unsupported Network",
     supportedNetworks: {
-      19: "Songbird"
+      16: "Flare"
     }
   }),
 
   getters: { 
     getBlockExplorerBaseUrl() {
       // TODO
-      return "https://songbird-explorer.flare.network";
+      return "https://coston-explorer.flare.network";
     },
     
     getChainId() {
@@ -68,8 +68,8 @@ export default {
   mutations: { 
     setNetworkData(state) {
       // TODO
-      state.networkName = "Songbird";
-      state.networkCurrency = "SGB";
+      state.networkName = "Flare";
+      state.networkCurrency = "FLR";
     }
   },
 

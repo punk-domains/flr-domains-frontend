@@ -16,11 +16,11 @@
 
     <a class="icons" target="_blank" href="https://docs.punk.domains"><i class="bi bi-journal-text"></i></a>
 
-    <a class="icons" target="_blank" href="https://github.com/punk-domains/sgb-domains-frontend"><i class="bi bi-github"></i></a>
+    <a class="icons" target="_blank" href="https://github.com/punk-domains/flr-domains-frontend"><i class="bi bi-github"></i></a>
 
     <a class="icons" target="_blank" href="https://discord.gg/8dSrwrAQeu"><i class="bi bi-discord"></i></a>
 
-    <a class="icons" target="_blank" href="https://twitter.com/SongbirdDomains"><i class="bi bi-twitter"></i></a>
+    <a class="icons" target="_blank" href="https://twitter.com/FlareDomains"><i class="bi bi-twitter"></i></a>
     
   </div>
 </template>
