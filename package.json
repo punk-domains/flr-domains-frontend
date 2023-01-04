@@ -1,5 +1,5 @@
 {
-  "name": "sgb-domains-frontend",
+  "name": "flr-domains-frontend",
   "version": "1.0.0",
   "scripts": {
     "dev": "vite",

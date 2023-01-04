@@ -69,6 +69,10 @@ hr {
   color: black;
 }
 
+.punchline-domain, code {
+  color: #b35160;
+}
+
 .span-link:hover {
   color: #1c1b1b;
   text-decoration: none;

@@ -15,11 +15,13 @@
         <div class="d-flex ms-auto">
 
           <div class="navbar-menu-buttons">
+            <!--
             <a 
               class="btn btn-primary mx-2 navbar-menu-btn" 
               href="#" 
               target="_blank"
             >Marketplace</a>
+            -->
 
             <div v-if="isActivated" class="btn-group mx-2 navbar-menu-btn">
               <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
@@ -29,6 +31,7 @@
                 <li>
                   <span 
                     class="dropdown-item" 
+                    :key="network"
                     v-for="network in getSupportedNetworkNames"
                     @click="changeNetwork(network)"
                   >Switch to {{network}}</span>

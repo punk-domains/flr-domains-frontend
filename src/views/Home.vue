@@ -3,7 +3,7 @@
     <img class="img-fluid main-img rounded" src="../assets/logo-color-bg-transparent.svg" />
 
     <div class="text-align-header mt-3">
-      <h1>Mint your {{getTldName}} domain!</h1>
+      <h1>Mint your <span class="punchline-domain">{{getTldName}}</span> domain!</h1>
     </div>
 
     <div class="d-flex justify-content-center domain-input-container mb-3 mt-5">
