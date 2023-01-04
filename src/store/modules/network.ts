@@ -68,7 +68,7 @@ export default {
   mutations: { 
     setNetworkData(state) {
       // TODO
-      state.networkName = "Flare";
+      state.networkName = "Coston Testnet";
       state.networkCurrency = "FLR";
     }
   },

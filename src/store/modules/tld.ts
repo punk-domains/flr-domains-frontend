@@ -14,7 +14,7 @@ export default {
     tldAddress: "0x8C88653A79c6df45472d1d3a25700066A72f034F", // TODO
     tldContract: null,
     tldChainId: 16,
-    tldChainName: "Flare",
+    tldChainName: "Coston Testnet",
     minterAddress: "0xA33dCbE04278706248891931537Dd56B795c3663", // TODO
     minterContract: null,
     minterPaused: true,
