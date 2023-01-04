@@ -1,6 +1,6 @@
-# Songbird Domains frontend
+# Flare Domains frontend
 
-Frontend for .sgb domain service powered by the [Punk Domains protocol](https://punk.domains).
+Frontend for .flr domain service powered by the [Punk Domains protocol](https://punk.domains).
 
 ## Quickstart
 

@@ -1,411 +1,226 @@
 [
-  {
-    "inputs": [
-      {
-        "internalType": "address",
-        "name": "_tldAddress",
-        "type": "address"
-      },
-      {
-        "internalType": "uint256",
-        "name": "_price1char",
-        "type": "uint256"
-      },
-      {
-        "internalType": "uint256",
-        "name": "_price2char",
-        "type": "uint256"
-      },
-      {
-        "internalType": "uint256",
-        "name": "_price3char",
-        "type": "uint256"
-      },
-      {
-        "internalType": "uint256",
-        "name": "_price4char",
-        "type": "uint256"
-      },
-      {
-        "internalType": "uint256",
-        "name": "_price5char",
-        "type": "uint256"
-      }
-    ],
-    "stateMutability": "nonpayable",
-    "type": "constructor"
-  },
-  {
-    "anonymous": false,
-    "inputs": [
-      {
-        "indexed": true,
-        "internalType": "address",
-        "name": "previousOwner",
-        "type": "address"
-      },
-      {
-        "indexed": true,
-        "internalType": "address",
-        "name": "newOwner",
-        "type": "address"
-      }
-    ],
-    "name": "OwnershipTransferred",
-    "type": "event"
-  },
-  {
-    "stateMutability": "payable",
-    "type": "fallback"
-  },
-  {
-    "inputs": [],
-    "name": "MAX_BPS",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "uint256",
-        "name": "_price",
-        "type": "uint256"
-      },
-      {
-        "internalType": "uint256",
-        "name": "_chars",
-        "type": "uint256"
-      }
-    ],
-    "name": "changePrice",
-    "outputs": [],
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "uint256",
-        "name": "_referral",
-        "type": "uint256"
-      }
-    ],
-    "name": "changeReferralFee",
-    "outputs": [],
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "uint256",
-        "name": "_royalty",
-        "type": "uint256"
-      }
-    ],
-    "name": "changeRoyaltyFee",
-    "outputs": [],
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "address",
-        "name": "_newReceiver",
-        "type": "address"
-      }
-    ],
-    "name": "changeRoyaltyFeeReceiver",
-    "outputs": [],
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "string",
-        "name": "_domainName",
-        "type": "string"
-      },
-      {
-        "internalType": "address",
-        "name": "_domainHolder",
-        "type": "address"
-      },
-      {
-        "internalType": "address",
-        "name": "_referrer",
-        "type": "address"
-      }
-    ],
-    "name": "mint",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "tokenId",
-        "type": "uint256"
-      }
-    ],
-    "stateMutability": "payable",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "owner",
-    "outputs": [
-      {
-        "internalType": "address",
-        "name": "",
-        "type": "address"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "string",
-        "name": "_domainName",
-        "type": "string"
-      },
-      {
-        "internalType": "address",
-        "name": "_domainHolder",
-        "type": "address"
-      }
-    ],
-    "name": "ownerFreeMint",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "tokenId",
-        "type": "uint256"
-      }
-    ],
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "paused",
-    "outputs": [
-      {
-        "internalType": "bool",
-        "name": "",
-        "type": "bool"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "price1char",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "price2char",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "price3char",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "price4char",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "price5char",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "address",
-        "name": "tokenAddress_",
-        "type": "address"
-      },
-      {
-        "internalType": "uint256",
-        "name": "tokenAmount_",
-        "type": "uint256"
-      },
-      {
-        "internalType": "address",
-        "name": "recipient_",
-        "type": "address"
-      }
-    ],
-    "name": "recoverERC20",
-    "outputs": [],
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "address",
-        "name": "tokenAddress_",
-        "type": "address"
-      },
-      {
-        "internalType": "uint256",
-        "name": "tokenId_",
-        "type": "uint256"
-      },
-      {
-        "internalType": "address",
-        "name": "recipient_",
-        "type": "address"
-      }
-    ],
-    "name": "recoverERC721",
-    "outputs": [],
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "referralFee",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "renounceOwnership",
-    "outputs": [],
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "royaltyFee",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "royaltyFeeReceiver",
-    "outputs": [
-      {
-        "internalType": "address",
-        "name": "",
-        "type": "address"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "tldContract",
-    "outputs": [
-      {
-        "internalType": "contract IFlexiPunkTLD",
-        "name": "",
-        "type": "address"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "togglePaused",
-    "outputs": [],
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "address",
-        "name": "newOwner",
-        "type": "address"
-      }
-    ],
-    "name": "transferOwnership",
-    "outputs": [],
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "withdraw",
-    "outputs": [],
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "stateMutability": "payable",
-    "type": "receive"
-  }
+	{
+		"type": "constructor",
+		"stateMutability": "nonpayable",
+		"inputs": [
+			{ "type": "address", "name": "_brokerAddress", "internalType": "address" },
+			{ "type": "address", "name": "_devAddress", "internalType": "address" },
+			{ "type": "address", "name": "_tldAddress", "internalType": "address" },
+			{ "type": "uint256", "name": "_referralFee", "internalType": "uint256" },
+			{ "type": "uint256", "name": "_brokerFee", "internalType": "uint256" },
+			{ "type": "uint256", "name": "_devFee", "internalType": "uint256" },
+			{ "type": "uint256", "name": "_price1char", "internalType": "uint256" },
+			{ "type": "uint256", "name": "_price2char", "internalType": "uint256" },
+			{ "type": "uint256", "name": "_price3char", "internalType": "uint256" },
+			{ "type": "uint256", "name": "_price4char", "internalType": "uint256" },
+			{ "type": "uint256", "name": "_price5char", "internalType": "uint256" }
+		]
+	},
+	{
+		"type": "event",
+		"name": "OwnershipTransferred",
+		"inputs": [
+			{ "type": "address", "name": "previousOwner", "internalType": "address", "indexed": true },
+			{ "type": "address", "name": "newOwner", "internalType": "address", "indexed": true }
+		],
+		"anonymous": false
+	},
+	{ "type": "fallback", "stateMutability": "payable" },
+	{
+		"type": "function",
+		"stateMutability": "view",
+		"outputs": [{ "type": "uint256", "name": "", "internalType": "uint256" }],
+		"name": "MAX_BPS",
+		"inputs": []
+	},
+	{
+		"type": "function",
+		"stateMutability": "view",
+		"outputs": [{ "type": "address", "name": "", "internalType": "address" }],
+		"name": "brokerAddress",
+		"inputs": []
+	},
+	{
+		"type": "function",
+		"stateMutability": "view",
+		"outputs": [{ "type": "uint256", "name": "", "internalType": "uint256" }],
+		"name": "brokerFee",
+		"inputs": []
+	},
+	{
+		"type": "function",
+		"stateMutability": "nonpayable",
+		"outputs": [],
+		"name": "changeBrokerAddress",
+		"inputs": [{ "type": "address", "name": "_brokerAddress", "internalType": "address" }]
+	},
+	{
+		"type": "function",
+		"stateMutability": "nonpayable",
+		"outputs": [],
+		"name": "changeBrokerFee",
+		"inputs": [{ "type": "uint256", "name": "_brokerFee", "internalType": "uint256" }]
+	},
+	{
+		"type": "function",
+		"stateMutability": "nonpayable",
+		"outputs": [],
+		"name": "changeDevAddress",
+		"inputs": [{ "type": "address", "name": "_devAddress", "internalType": "address" }]
+	},
+	{
+		"type": "function",
+		"stateMutability": "nonpayable",
+		"outputs": [],
+		"name": "changeDevFee",
+		"inputs": [{ "type": "uint256", "name": "_devFee", "internalType": "uint256" }]
+	},
+	{
+		"type": "function",
+		"stateMutability": "nonpayable",
+		"outputs": [],
+		"name": "changePrice",
+		"inputs": [
+			{ "type": "uint256", "name": "_price", "internalType": "uint256" },
+			{ "type": "uint256", "name": "_chars", "internalType": "uint256" }
+		]
+	},
+	{
+		"type": "function",
+		"stateMutability": "nonpayable",
+		"outputs": [],
+		"name": "changeReferralFee",
+		"inputs": [{ "type": "uint256", "name": "_referralFee", "internalType": "uint256" }]
+	},
+	{
+		"type": "function",
+		"stateMutability": "view",
+		"outputs": [{ "type": "address", "name": "", "internalType": "address" }],
+		"name": "devAddress",
+		"inputs": []
+	},
+	{
+		"type": "function",
+		"stateMutability": "view",
+		"outputs": [{ "type": "uint256", "name": "", "internalType": "uint256" }],
+		"name": "devFee",
+		"inputs": []
+	},
+	{
+		"type": "function",
+		"stateMutability": "payable",
+		"outputs": [{ "type": "uint256", "name": "tokenId", "internalType": "uint256" }],
+		"name": "mint",
+		"inputs": [
+			{ "type": "string", "name": "_domainName", "internalType": "string" },
+			{ "type": "address", "name": "_domainHolder", "internalType": "address" },
+			{ "type": "address", "name": "_referrer", "internalType": "address" }
+		]
+	},
+	{
+		"type": "function",
+		"stateMutability": "view",
+		"outputs": [{ "type": "address", "name": "", "internalType": "address" }],
+		"name": "owner",
+		"inputs": []
+	},
+	{
+		"type": "function",
+		"stateMutability": "nonpayable",
+		"outputs": [{ "type": "uint256", "name": "tokenId", "internalType": "uint256" }],
+		"name": "ownerFreeMint",
+		"inputs": [
+			{ "type": "string", "name": "_domainName", "internalType": "string" },
+			{ "type": "address", "name": "_domainHolder", "internalType": "address" }
+		]
+	},
+	{
+		"type": "function",
+		"stateMutability": "view",
+		"outputs": [{ "type": "bool", "name": "", "internalType": "bool" }],
+		"name": "paused",
+		"inputs": []
+	},
+	{
+		"type": "function",
+		"stateMutability": "view",
+		"outputs": [{ "type": "uint256", "name": "", "internalType": "uint256" }],
+		"name": "price1char",
+		"inputs": []
+	},
+	{
+		"type": "function",
+		"stateMutability": "view",
+		"outputs": [{ "type": "uint256", "name": "", "internalType": "uint256" }],
+		"name": "price2char",
+		"inputs": []
+	},
+	{
+		"type": "function",
+		"stateMutability": "view",
+		"outputs": [{ "type": "uint256", "name": "", "internalType": "uint256" }],
+		"name": "price3char",
+		"inputs": []
+	},
+	{
+		"type": "function",
+		"stateMutability": "view",
+		"outputs": [{ "type": "uint256", "name": "", "internalType": "uint256" }],
+		"name": "price4char",
+		"inputs": []
+	},
+	{
+		"type": "function",
+		"stateMutability": "view",
+		"outputs": [{ "type": "uint256", "name": "", "internalType": "uint256" }],
+		"name": "price5char",
+		"inputs": []
+	},
+	{
+		"type": "function",
+		"stateMutability": "nonpayable",
+		"outputs": [],
+		"name": "recoverERC20",
+		"inputs": [
+			{ "type": "address", "name": "tokenAddress_", "internalType": "address" },
+			{ "type": "uint256", "name": "tokenAmount_", "internalType": "uint256" },
+			{ "type": "address", "name": "recipient_", "internalType": "address" }
+		]
+	},
+	{
+		"type": "function",
+		"stateMutability": "nonpayable",
+		"outputs": [],
+		"name": "recoverERC721",
+		"inputs": [
+			{ "type": "address", "name": "tokenAddress_", "internalType": "address" },
+			{ "type": "uint256", "name": "tokenId_", "internalType": "uint256" },
+			{ "type": "address", "name": "recipient_", "internalType": "address" }
+		]
+	},
+	{
+		"type": "function",
+		"stateMutability": "view",
+		"outputs": [{ "type": "uint256", "name": "", "internalType": "uint256" }],
+		"name": "referralFee",
+		"inputs": []
+	},
+	{ "type": "function", "stateMutability": "nonpayable", "outputs": [], "name": "renounceOwnership", "inputs": [] },
+	{
+		"type": "function",
+		"stateMutability": "view",
+		"outputs": [{ "type": "address", "name": "", "internalType": "contract IFlexiPunkTLD" }],
+		"name": "tldContract",
+		"inputs": []
+	},
+	{ "type": "function", "stateMutability": "nonpayable", "outputs": [], "name": "togglePaused", "inputs": [] },
+	{
+		"type": "function",
+		"stateMutability": "nonpayable",
+		"outputs": [],
+		"name": "transferOwnership",
+		"inputs": [{ "type": "address", "name": "newOwner", "internalType": "address" }]
+	},
+	{ "type": "function", "stateMutability": "nonpayable", "outputs": [], "name": "withdraw", "inputs": [] },
+	{ "type": "receive", "stateMutability": "payable" }
 ]

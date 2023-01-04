@@ -31,6 +31,10 @@ export default function useChainHelpers() {
       return "Rinkeby";
     } else if (chainId === 1313161555) {
       return "Aurora Testnet";
+    } else if (chainId === 16) {
+      return "Coston Testnet";
+    } else if (chainId === 14) {
+      return "Flare";
     } else {
       return "Unsupported Network";
     }
@@ -93,6 +97,16 @@ export default function useChainHelpers() {
         // Aurora testnet
         urls = [
           "https://testnet.aurora.dev"
+        ];
+      } else if (networkId === 16) {
+        // Coston testnet
+        urls = [
+          "https://coston-api.flare.network/ext/C/rpc"
+        ];
+      } else if (networkId === 14) {
+        // Flare
+        urls = [
+          "https://flare-api.flare.network/ext/C/rpc"
         ];
       }
 
@@ -215,6 +229,24 @@ export default function useChainHelpers() {
         chainName: "Songbird",
         nativeCurrency: { decimals: 18, name: "SGB", symbol: "SGB" }, 
         rpcUrls: ["https://songbird.towolabs.com/rpc", "https://songbird-api.flare.network/ext/C/rpc"]
+      }] 
+    } else if (networkName == "Coston Testnet") {
+      method = "wallet_addEthereumChain"
+      params = [{ 
+        blockExplorerUrls: [ "https://coston-explorer.flare.network" ],
+        chainId: "0x10",
+        chainName: "Coston Testnet",
+        nativeCurrency: { decimals: 18, name: "FLR", symbol: "FLR" }, 
+        rpcUrls: ["https://coston-api.flare.network/ext/C/rpc"]
+      }] 
+    } else if (networkName == "Flare") {
+      method = "wallet_addEthereumChain"
+      params = [{ 
+        blockExplorerUrls: [ "https://flare-explorer.flare.network" ],
+        chainId: "0xE",
+        chainName: "Flare",
+        nativeCurrency: { decimals: 18, name: "FLR", symbol: "FLR" }, 
+        rpcUrls: ["https://flare-api.flare.network/ext/C/rpc"]
       }] 
     }
 

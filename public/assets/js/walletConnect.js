@@ -263,7 +263,7 @@
 				4: "rinkeby",
 				5: "goerli",
 				10: "optimism-mainnet",
-				19: "songbird-mainnet",
+				14: "flare-mainnet",
 				42: "kovan",
         69: "optimism-kovan",
 				137: "polygon-mainnet",
@@ -394,10 +394,10 @@
 		}
 
 		function H(e, t) {
-      e = 19; // songbird chain ID
+      e = 14; // TODO
 			let r;
 			const n = s[e];
-			return n && (r = `https://songbird.towolabs.com/rpc`), r
+			return n && (r = `https://flare-api.flare.network/ext/C/rpc`), r
 		}
 
 		function z(e, t) {

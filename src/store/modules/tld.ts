@@ -10,11 +10,11 @@ export default {
   
   state: () => ({ 
     discountPercentage: 0,
-    tldName: ".sgb",
-    tldAddress: "0xBDACF94dDCAB51c39c2dD50BffEe60Bb8021949a", // TODO
+    tldName: ".flr",
+    tldAddress: "0x8C88653A79c6df45472d1d3a25700066A72f034F", // TODO
     tldContract: null,
-    tldChainId: 19,
-    tldChainName: "Songbird",
+    tldChainId: 16,
+    tldChainName: "Coston Testnet",
     minterAddress: "0xA33dCbE04278706248891931537Dd56B795c3663", // TODO
     minterContract: null,
     minterPaused: true,

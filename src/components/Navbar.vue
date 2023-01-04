@@ -2,8 +2,8 @@
   <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container-fluid">
       <router-link to="/" class="navbar-brand">
-        <img src="../assets/logo.png" alt="" width="30" class="d-inline-block align-baseline navbar-img">
-        Songbird Domains
+        <img src="../assets/logo-sun.svg" alt="" width="40" class="d-inline-block align-middle navbar-img">
+        flr.domains
       </router-link>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,7 +17,7 @@
           <div class="navbar-menu-buttons">
             <a 
               class="btn btn-primary mx-2 navbar-menu-btn" 
-              href="https://www.sparklesnft.com/collection/songbirddomains/" 
+              href="#" 
               target="_blank"
             >Marketplace</a>
 
@@ -121,11 +121,9 @@ export default {
 .dropdown-item {
   cursor: pointer;
 }
-.navbar-brand {
-  font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
-}
-.navbar-dark .navbar-brand {
+.navbar-dark .navbar-brand, .navbar-dark .navbar-brand:hover {
   /*color: #fff;*/
+  color: #b35160;
 }
 .navbar-dark {
   border-radius: 0px 0px 10px 10px;
