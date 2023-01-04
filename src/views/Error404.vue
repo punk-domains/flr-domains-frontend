@@ -26,10 +26,4 @@
   margin-top: 150px;
   margin-bottom: 50px;
 }
-
-.logo {
-  font-family: 'Impact', cursive;
-  font-size: 2em;
-  /*margin-bottom: 150px;*/
-}
 </style>

@@ -1,20 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
-
-@font-face { 
-  font-family: "Impact";
-  src: url("assets/font/impact.ttf"); 
-}
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap');
 
 a {
   color: #fff;
 }
 
 a:hover {
-  color: #fff;
+  color: #b35160;
 }
 
 body {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Public Sans', sans-serif;
   background: linear-gradient(30deg, #0D0F1A 30%, #0D0F1A 100%);
   color: #fff;
 }
@@ -39,9 +34,9 @@ hr {
 }
 
 .btn-primary:hover {
-  color: #000;
-  background: #fff;
-  border: 2px solid white;
+  color: #fff;
+  background: #b35160;
+  border: 2px solid #b35160;
 }
 
 .btn-secondary, .btn-secondary:active, .btn-secondary:focus, .btn-secondary:disabled {
