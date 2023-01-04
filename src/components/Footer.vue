@@ -20,7 +20,7 @@
 
     <a class="icons" target="_blank" href="https://discord.gg/8dSrwrAQeu"><i class="bi bi-discord"></i></a>
 
-    <a class="icons" target="_blank" href="https://twitter.com/FlareDomains"><i class="bi bi-twitter"></i></a>
+    <a class="icons" target="_blank" href="https://twitter.com/flrdomains"><i class="bi bi-twitter"></i></a>
     
   </div>
 </template>

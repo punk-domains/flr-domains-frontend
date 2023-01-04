@@ -2,7 +2,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container-fluid">
       <router-link to="/" class="navbar-brand">
-        <img src="../assets/logo.png" alt="" width="30" class="d-inline-block align-baseline navbar-img">
+        <img src="../assets/logo.svg" alt="" width="30" class="d-inline-block align-baseline navbar-img">
         Flare Domains
       </router-link>
 
@@ -17,7 +17,7 @@
           <div class="navbar-menu-buttons">
             <a 
               class="btn btn-primary mx-2 navbar-menu-btn" 
-              href="https://www.sparklesnft.com/collection/flaredomains/" 
+              href="#" 
               target="_blank"
             >Marketplace</a>
 

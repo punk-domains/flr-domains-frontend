@@ -10,7 +10,7 @@ export default {
     networkCurrency: "ETH",
     networkName: "Unsupported Network",
     supportedNetworks: {
-      16: "Flare"
+      16: "Coston Testnet"
     }
   }),
 

@@ -243,7 +243,7 @@ export default function useChainHelpers() {
       method = "wallet_addEthereumChain"
       params = [{ 
         blockExplorerUrls: [ "https://flare-explorer.flare.network" ],
-        chainId: "0x0e",
+        chainId: "0xE",
         chainName: "Flare",
         nativeCurrency: { decimals: 18, name: "FLR", symbol: "FLR" }, 
         rpcUrls: ["https://flare-api.flare.network/ext/C/rpc"]
