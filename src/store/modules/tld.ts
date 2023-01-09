@@ -11,18 +11,18 @@ export default {
   state: () => ({ 
     discountPercentage: 0,
     tldName: ".flr",
-    tldAddress: "0x8C88653A79c6df45472d1d3a25700066A72f034F", // TODO
+    tldAddress: "0xBDACF94dDCAB51c39c2dD50BffEe60Bb8021949a", // TODO
     tldContract: null,
-    tldChainId: 16,
-    tldChainName: "Coston Testnet",
-    minterAddress: "0xA33dCbE04278706248891931537Dd56B795c3663", // TODO
+    tldChainId: 14,
+    tldChainName: "Flare",
+    minterAddress: "0x63f8691b048e68E1C3d6E135aDc81291A9bb1987", // TODO
     minterContract: null,
     minterPaused: true,
-    minterTldPrice1: 50000,
-    minterTldPrice2: 25000,
-    minterTldPrice3: 7749,
-    minterTldPrice4: 1999,
-    minterTldPrice5: 999
+    minterTldPrice1: 10000,
+    minterTldPrice2: 4000,
+    minterTldPrice3: 599,
+    minterTldPrice4: 99,
+    minterTldPrice5: 19
   }),
 
   getters: { 

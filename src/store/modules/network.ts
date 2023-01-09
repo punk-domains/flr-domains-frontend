@@ -7,17 +7,17 @@ export default {
   namespaced: true,
   
   state: () => ({
-    networkCurrency: "ETH",
+    networkCurrency: "FLR", // TODO
     networkName: "Unsupported Network",
     supportedNetworks: {
-      16: "Coston Testnet"
+      14: "Flare"
     }
   }),
 
   getters: { 
     getBlockExplorerBaseUrl() {
       // TODO
-      return "https://coston-explorer.flare.network";
+      return "https://flare-explorer.flare.network";
     },
     
     getChainId() {
@@ -68,7 +68,7 @@ export default {
   mutations: { 
     setNetworkData(state) {
       // TODO
-      state.networkName = "Coston Testnet";
+      state.networkName = "Flare";
       state.networkCurrency = "FLR";
     }
   },

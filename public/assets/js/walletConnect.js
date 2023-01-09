@@ -12049,7 +12049,7 @@
 			constructor(e) {
 				if (super({
 						pollingInterval: e.pollingInterval || 8e3
-					}), this.bridge = "https://bridge.walletconnect.org", this.qrcode = !0, this.qrcodeModal = o.default, this.qrcodeModalOptions = void 0, this.rpc = null, this.infuraId = "", this.http = null, this.isConnecting = !1, this.connected = !1, this.connectCallbacks = [], this.accounts = [], this.chainId = 19, this.rpcUrl = "", this.enable = () => n.__awaiter(this, void 0, void 0, (function*() {
+					}), this.bridge = "https://bridge.walletconnect.org", this.qrcode = !0, this.qrcodeModal = o.default, this.qrcodeModalOptions = void 0, this.rpc = null, this.infuraId = "", this.http = null, this.isConnecting = !1, this.connected = !1, this.connectCallbacks = [], this.accounts = [], this.chainId = 14, this.rpcUrl = "", this.enable = () => n.__awaiter(this, void 0, void 0, (function*() {
 						const e = yield this.getWalletConnector();
 						if (e) return this.start(), this.subscribeWalletConnector(), e.accounts;
 						throw new Error("Failed to connect to WalleConnect")
