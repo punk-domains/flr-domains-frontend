@@ -18,11 +18,11 @@ export default {
     minterAddress: "0x63f8691b048e68E1C3d6E135aDc81291A9bb1987", // TODO
     minterContract: null,
     minterPaused: true,
-    minterTldPrice1: 10000,
-    minterTldPrice2: 4000,
-    minterTldPrice3: 599,
-    minterTldPrice4: 99,
-    minterTldPrice5: 19
+    minterTldPrice1: 19999,
+    minterTldPrice2: 9999,
+    minterTldPrice3: 2999,
+    minterTldPrice4: 299,
+    minterTldPrice5: 199
   }),
 
   getters: { 
