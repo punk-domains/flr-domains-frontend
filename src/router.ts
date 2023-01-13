@@ -8,6 +8,7 @@ import DomainDetails from './views/DomainDetails.vue'
 import Home from './views/Home.vue'
 import HowItWorks from './views/HowItWorks.vue'
 import Profile from './views/Profile.vue'
+import ProfileSendTokens from './views/ProfileSendTokens.vue'
 import SearchDomains from './views/SearchDomains.vue'
 import SendTokens from './views/SendTokens.vue'
 import TransferDomain from './views/TransferDomain.vue'
@@ -55,6 +56,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/profile',
     name: 'Profile',
     component: Profile,
+  },
+  {
+    path: '/profile/send-tokens',
+    name: 'ProfileSendTokens',
+    component: ProfileSendTokens,
   },
   {
     path: '/search-domain',

@@ -24,6 +24,10 @@
             -->
 
             <div v-if="isActivated" class="btn-group mx-2 navbar-menu-btn">
+              <router-link tag="button" class="btn btn-primary" to="/send-tokens">Send Tokens</router-link>
+            </div>
+
+            <div v-if="isActivated" class="btn-group mx-2 navbar-menu-btn">
               <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                 {{getNetworkName}}
               </button>
