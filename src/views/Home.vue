@@ -36,22 +36,28 @@
     </div>
 
     <!-- Minter contract paused -->
-    <button v-if="isActivated && getMinterPaused" class="btn btn-primary btn-lg mt-3 buy-button" :disabled="true">
+    <button v-if="isActivated && getMinterPaused && !getMinterLoadingData" class="btn btn-primary btn-lg mt-3 buy-button" :disabled="true">
       <span v-if="getMinterPaused">Coming soon</span>
+    </button>
+
+    <!-- Minter contract loading data -->
+    <button v-if="isActivated && isNetworkSupported && getMinterLoadingData" class="btn btn-primary btn-lg mt-3 buy-button" :disabled="true">
+      <span class="spinner-border spinner-border-sm mx-1" role="status" aria-hidden="true"></span>
+      <span>Loading data</span>
     </button>
 
     <!-- Not eligible -->
     <button 
-      v-if="isActivated && isNetworkSupported && !getMinterPaused && !getCanUserBuy" 
+      v-if="isActivated && isNetworkSupported && !getMinterPaused && !getCanUserBuy && !getMinterLoadingData" 
       class="btn btn-primary btn-lg mt-3 buy-button" 
       :disabled="waiting || buyNotValid(chosenDomainName).invalid || !hasUserEnoughTokens"
     >
-      <span>You need to own all three Dishes NFTs</span>
+      <span>Not eligible</span>
     </button>
 
     <!-- Too low ETH balance -->
     <button 
-      v-if="isActivated && isNetworkSupported && !getMinterPaused && !hasUserEnoughTokens && getCanUserBuy" 
+      v-if="isActivated && isNetworkSupported && !getMinterPaused && !hasUserEnoughTokens && getCanUserBuy && !getMinterLoadingData" 
       class="btn btn-primary btn-lg mt-3 buy-button" 
       :disabled="waiting || buyNotValid(chosenDomainName).invalid || !hasUserEnoughTokens"
     >
@@ -60,7 +66,7 @@
 
     <!-- Buy domain -->
     <button 
-      v-if="isActivated && isNetworkSupported && getCanUserBuy && !getMinterPaused && hasUserEnoughTokens" 
+      v-if="isActivated && isNetworkSupported && getCanUserBuy && !getMinterPaused && hasUserEnoughTokens && !getMinterLoadingData" 
       class="btn btn-primary btn-lg mt-3 buy-button" 
       @click="buyDomain" 
       :disabled="waiting || buyNotValid(chosenDomainName).invalid || !hasUserEnoughTokens"
@@ -148,7 +154,7 @@ export default {
   computed: {
     ...mapGetters("user", ["getPaymentTokenAddress", "getPaymentTokenName", "getPaymentTokenAllowance", "getUserBalance", "getCanUserBuy", "getDiscountEligible"]),
     ...mapGetters("network", ["getBlockExplorerBaseUrl"]),
-    ...mapGetters("tld", ["getTldChainId", "getTldChainName", "getMinterAddress", "getTldContract", "getMinterTldPrice1", "getMinterTldPrice2", "getMinterTldPrice3", "getMinterTldPrice4", "getMinterTldPrice5", "getMinterPaused", "getMinterDiscountPercentage", "getTldName"]),
+    ...mapGetters("tld", ["getTldChainId", "getTldChainName", "getMinterAddress", "getMinterLoadingData", "getTldContract", "getMinterTldPrice1", "getMinterTldPrice2", "getMinterTldPrice3", "getMinterTldPrice4", "getMinterTldPrice5", "getMinterPaused", "getMinterDiscountPercentage", "getTldName"]),
 
     getPrice() {
       if (this.chosenDomainName) {

@@ -48,7 +48,7 @@
               </ul>
             </div>
 
-            <button v-if="!isActivated" class="btn btn-primary navbar-menu-btn" @click="open">Connect wallet</button>
+            <button v-if="!isActivated" class="btn btn-primary navbar-menu-btn me-3" @click="open">Connect wallet</button>
 
             <a 
               class="btn btn-primary me-3 navbar-menu-btn" 
